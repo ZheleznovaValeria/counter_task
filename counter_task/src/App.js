@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import {CounterButton, Positions, CounterStyle} from './App.styles.js'
 import React, { useState } from 'react';
 

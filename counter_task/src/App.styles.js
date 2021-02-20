@@ -13,6 +13,7 @@ const CounterButton = styled.button`
     margin-left: 30px; 
 `
 const Positions = styled.div`
+    margin-top: 350px; 
     display: flex; 
     flex-direction: row; 
     justify-content: center;
