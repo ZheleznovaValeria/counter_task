@@ -1,15 +1,14 @@
-
-import {CounterButton, Positions, CounterStyle} from './App.styles.js'
-import React, { useState } from 'react';
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import LoginPage from "./login.js";
+import Counter from "./counter"; 
 
 function App() {
-  const [count, setCount] = useState(0); 
   return (
-    <Positions>
-      <CounterButton onClick={() => setCount(count - 1)}>-</CounterButton>
-      <CounterStyle>{count}</CounterStyle>
-      <CounterButton onClick={() => setCount(count + 1)}>+</CounterButton>
-    </Positions>
+    <BrowserRouter>
+        <Route path='/login' component={LoginPage} />
+        <Route path='/counter' component={Counter} />
+    </BrowserRouter>
   );
 }
 
