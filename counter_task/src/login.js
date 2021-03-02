@@ -1,13 +1,11 @@
 import React from 'react';
-import { Button, Container, Hello } from './login.styles';
+import { Button, Container } from './login.styles';
+import Form from './Form';
 
 function LoginPage() {
   return (
     <Container>
-      <Hello>
-        Heyo wassup, Yarik? I'm fine too, spasibo cho sprosil:) I hope, that I've done this correctly, inache ya
-        sovershu suicide:)
-      </Hello>
+      <Form />
       <Button to="/counter">Жмакни кнопку</Button>
     </Container>
   );
